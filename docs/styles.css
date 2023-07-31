@@ -179,3 +179,15 @@ body {
         justify-content: center;
     }
 }
+
+@media (max-width:480px) {
+    .footers-items {
+        display: none;
+    }
+}
+
+@media (max-width:360px) {
+    .brand-logo {
+        display: none;
+    }
+}

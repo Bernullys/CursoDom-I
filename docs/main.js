@@ -8,7 +8,7 @@ async function getAvocados () {
         const response = await fetch(API_AVO);
         console.log(`Response Status ${response.status}`)
         if (response.status != 200) {
-            throw new Error(`Error fetching data`);
+            throw new Error(`Error fetching data: ${statusName}`);
         };
         const info = await response.json();
         console.log("This is the info from API_AVO");
